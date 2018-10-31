@@ -22,9 +22,8 @@ LC_ALL=C.UTF-8
 
     export PATH=/opt/anaconda/bin:${PATH}
 
-    cd /opt/ && git clone https://github.com/moonso/loqusdb -b add-sv
-    cd /opt/loqusdb/ && pip install -e .
-
+    pip install https://github.com/moonso/loqusdb/archive/2.1.zip
+    
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
     echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.6.list
 
